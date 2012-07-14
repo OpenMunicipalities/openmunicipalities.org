@@ -1,0 +1,139 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+/* Reseting html, body tags to 0 marging and padding */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Main Background */
+
+#main2 {
+  background-image:url('NEW_3.jpg'); 
+  width:100%; 
+  background-repeat:no-repeat;
+  font-family:'Open1';
+  background-attachment:fixed; 
+  bottom:0px;
+  background-position:bottom;
+}
+
+
+
+/* Content */
+
+#content{
+position:relative;
+top:30px;
+padding: 15px;
+font-size: 15px;
+font-weight: bold;
+line-height: 17px;
+}
+
+
+/* Footer */
+#left {
+float: left;
+margin-left:30px;
+}
+
+
+#right {
+float: clear both;
+float:right;
+margin-right:30px;
+}
+
+
+
+/* Header */
+
+.mainheader {
+list-style-type:none;
+margin:0;
+padding:0;
+}
+
+.mainheader li {
+display: inline;
+font-size: 25px;
+padding: 5px;
+
+}
+
+.mainheader a{
+text-decoration: none;
+display: block;
+width: 70px;
+display: inline;
+word-spacing:-7px;
+}
+
+#menu-right {
+float: clear both;
+float:right;
+margin-right: 10px;
+}
+
+
+
+/* Coming Soon */
+
+#coming {
+margin-top:150px;
+text-align: center;
+font-size: 70px;
+}
+
+
+
+/* Logo */
+
+#logoset{
+float: left;
+margin-left:20px;
+}
+
+
+
+/* Sign-Up link */
+
+#signup{
+margin-top:40px;
+text-align:center;
+font-size:15px;
+}
+
+
+/* Logo and Sign-up header */
+
+#header{
+float: left;
+width: 100%;
+}
+
+/* Successful user create message */
+
+#msg {
+margin-left: 20px;
+color:#05692B;
+
+} 
+
+
