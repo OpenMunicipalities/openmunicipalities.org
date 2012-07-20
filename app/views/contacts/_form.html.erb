@@ -14,30 +14,30 @@
   <div class="field">
     <%= f.label :name %>
   <div class="text">
-    <%= f.text_field :name, :size =>20%>
+    <%= f.text_field :name, :size =>46%>
   </div>
   </div>
   <div class="field">
     <%= f.label :email %>
   <div class="text">
-    <%= f.text_field :email, :size =>20 %>
+    <%= f.text_field :email, :size =>46 %>
   </div>
   </div>
   <div class="field">
     <%= f.label :subject %>
   <div class="text">
-    <%= f.text_field :subject, :size =>20 %>
+    <%= f.text_field :subject, :size =>46 %>
   </div>
   </div>
   <div class="field">
     <%= f.label :message %><br/>
   <div class="text">
-    <%= f.text_area :message, :rows => 5, :cols => 20 %>
+    <%= f.text_area :message, :rows => 5, :cols => 60 %>
   </div>
   </div>
 
-  <span>Verify!</span>
-<div id="captcha">  <%= recaptcha_tags :public_key => '6LcW3tMSAAAAACVV2eXWHUaIH3gJ36kdlnGcqJRM' %></div>
+  <span>Verify your identity</span><br/>
+<%= recaptcha_tags :public_key => '6LcW3tMSAAAAACVV2eXWHUaIH3gJ36kdlnGcqJRM', :display => {:theme => 'clean'}, :message => 'Please try again.' %>
 <br/>
   <div class="actions">
     <%= f.submit "Submit" %>

@@ -21,16 +21,20 @@ html, body {
 }
 
 
+
+
 /* Main Background */
 
 #main2 {
   background-image:url('NEW_3.jpg'); 
   width:100%; 
   background-repeat:no-repeat;
-  font-family:'Open1';
   background-attachment:fixed; 
   bottom:0px;
   background-position:bottom;
+  top: 0;
+  left: 0;
+  min-height:647px;
 }
 
 
@@ -41,26 +45,37 @@ html, body {
 position:relative;
 top:30px;
 padding: 15px;
-font-size: 15px;
-font-weight: bold;
 line-height: 17px;
 }
 
 
 /* Footer */
-#left {
-float: left;
-margin-left:30px;
-}
 
+footer{
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:70px;
+   width:100%;
+   background:#2B2A2A;
+   color:#fff;
+
+}
 
 #right {
 float: clear both;
 float:right;
 margin-right:30px;
+margin-top:25px;
+font-size:12px;
 }
 
-
+#footerleft{
+float: left;
+margin-left:30px;
+margin-top:5px;
+padding:7px;
+}
 
 /* Header */
 
@@ -72,8 +87,8 @@ padding:0;
 
 .mainheader li {
 display: inline;
-font-size: 25px;
-padding: 5px;
+font-size: 16px;
+padding: 7px;
 
 }
 
@@ -82,8 +97,10 @@ text-decoration: none;
 display: block;
 width: 70px;
 display: inline;
-word-spacing:-7px;
+word-spacing:-3px;
+color:#453C3F;
 }
+
 
 #menu-right {
 float: clear both;
@@ -96,8 +113,8 @@ margin-right: 10px;
 /* Coming Soon */
 
 #coming {
-margin-top:150px;
-text-align: center;
+margin-top:100px;
+text-align:center;
 font-size: 70px;
 }
 
@@ -112,28 +129,24 @@ margin-left:20px;
 
 
 
-/* Sign-Up link */
-
-#signup{
-margin-top:40px;
-text-align:center;
-font-size:15px;
-}
-
-
-/* Logo and Sign-up header */
-
-#header{
-float: left;
-width: 100%;
-}
-
 /* Successful user create message */
 
 #msg {
 margin-left: 20px;
 color:#05692B;
+}
 
+
+/* Newsletter */
+#newsletter{
+font-size:25px;
+font-weight:normal;
+margin-top:40px;
 } 
 
+/* Get Involved */
+
+#get_involved{
+float: right;
+}
 

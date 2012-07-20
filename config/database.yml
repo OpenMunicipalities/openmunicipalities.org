@@ -37,6 +37,6 @@ production:
   reconnect: false
   database: openmunicipalities.org_production
   pool: 5
-  username: root
-  password: neel
+  username: 
+  password: 
   socket: /var/run/mysqld/mysqld.sock

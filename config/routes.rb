@@ -1,15 +1,14 @@
 OpenmunicipalitiesOrg::Application.routes.draw do
 
-
+   # Remember that in thid routes file. Precedence of the routes matters a lot.
   
   root to: 'home#index'
 
   match '/signup',  to: 'users#new'  
-
+  match '/admin', to: 'sessions#new'
   match '/about',    to: 'home#about'
-  resources :contacts
-  resources :users 
-
+  resources :contacts, :users, :blogs, :newsletters , :sessions
+   
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

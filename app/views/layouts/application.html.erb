@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>OpenmunicipalitiesOrg</title>
+  <title>Openmunicipalities.org</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -11,16 +11,11 @@
 <br/>
 <div id="msg">
 <% flash.each do |key, value| %>
-<%= value.html_safe %>
+<%= value %>
 <% end %>
 </div>
 <%=render 'layouts/header'%>
 <br/>
-<div id="header">
-<div id="logoset">
-<%= image_tag asset_path 'logo.png', :style => 'height: 100px; width: 250px;' %>
-</div>
-</div>
 <div id="main2">
 <div id="content">
 <%= yield %>

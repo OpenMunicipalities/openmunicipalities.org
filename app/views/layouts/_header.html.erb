@@ -1,9 +1,14 @@
 <nav id="menu-right">
-  <ul class="mainheader">
-    <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "About Us", about_path %></li>
-    <li><%= link_to "Contact Us", :controller => "contacts", :action => "new" %></li>
+    <ul class="mainheader">
+    <li><span class="parent"><%= link_to "Home", root_path %></span></li>
+    <li><%= link_to "About", about_path %></li>
+    <li><%= link_to "Blog", blogs_path %></li>
+    <li><%= link_to "News", "#" %></li>
+    <li><%= link_to "Contact", :controller => "contacts", :action => "new" %></li>
     <li><%= link_to "Sign Up", signup_path %></li>
-  </ul>
+    </ul>
+</nav>
 
+<nav id="logoset">
+<%= image_tag("logo.png", :height =>  '160', :width => '170', :alt => "OpenMunicipalitiesLogo") %>
 </nav>

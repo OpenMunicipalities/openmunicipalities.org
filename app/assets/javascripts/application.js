@@ -12,4 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui-1.8.21.custom.min.js
 //= require_tree .

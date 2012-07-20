@@ -42,8 +42,8 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(params[:contact])
     respond_to do |format|
-      if (verify_recaptcha :private_key => '6LcW3tMSAAAAAETBFhP6-G3t7ySkxbulNJs8a9uL'&& @contact.save)
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
+      if verify_recaptcha(:private_key => '6LcW3tMSAAAAAETBFhP6-G3t7ySkxbulNJs8a9uL',:message => "Please fill captcha code correctly.") && @contact.save
+        format.html { redirect_to @contact, notice: 'Thankyou for contacting us. We will soon respond back to you.' }
         format.json { render json: @contact, status: :created, location: @contact }
       else
         format.html { render action: "new" }
@@ -70,6 +70,8 @@ class ContactsController < ApplicationController
 
   # DELETE /contacts/1
   # DELETE /contacts/1.json
+
+
   def destroy
     @contact = Contact.find(params[:id])
     @contact.destroy
@@ -79,4 +81,5 @@ class ContactsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 end

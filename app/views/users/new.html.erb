@@ -1,3 +1,4 @@
+<div class="signupform">
 <%= provide(:title, 'Sign up')%>
 <h1> Sign up</h1>
 
@@ -18,20 +19,21 @@
   <% end %>
 
       <%= f.label :name %><br/>
-      <%= f.text_field :name %>
+      <%= f.text_field :name, :size =>46 %>
 <br/><br/>
       <%= f.label :email %><br/>
-      <%= f.text_field :email %>
+      <%= f.text_field :email, :size =>46 %>
 <br/><br>
       <%= f.label :password %><br/>
-      <%= f.password_field :password %>
+      <%= f.password_field :password, :size =>46 %>
 <br/><br/>
       <%= f.label :password_confirmation, "Confirmation" %><br/>
-      <%= f.password_field :password_confirmation %>
+      <%= f.password_field :password_confirmation, :size =>46 %>
 <br/><br/>
-      <%= f.submit "Sign Up", class: "btn btn-large btn-primary" %>
+      <%= f.submit "Sign Up!"%>
     <% end %>
+</div>
 <br/>
-<br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
   </div>
 </div>

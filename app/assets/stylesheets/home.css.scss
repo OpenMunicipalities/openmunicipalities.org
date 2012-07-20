@@ -1,3 +1,30 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.about{
+
+ margin:100px 100px 100px 250px;
+ border:2px solid;
+ -webkit-border-top-right-radius: 25px;
+-webkit-border-bottom-left-radius: 25px;
+-moz-border-radius-topright: 25px;
+-moz-border-radius-bottomleft: 25px;
+border-top-right-radius: 25px;
+border-bottom-left-radius: 25px;
+ width:600px; 
+		
+
+
+}
+
+.abouttext{
+
+color:#474244;
+font-size:15px;
+font-weight:1;
+padding:10px;
+
+
+
+}

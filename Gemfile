@@ -5,6 +5,7 @@ gem 'therubyracer'
 gem 'execjs'
 gem "recaptcha", :require => "recaptcha/rails"
 gem 'mysql2'
+gem "bcrypt-ruby", '3.0.1'
 
 
 # Gems used only for assets and not required
