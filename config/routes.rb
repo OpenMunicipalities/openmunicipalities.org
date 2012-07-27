@@ -5,9 +5,13 @@ OpenmunicipalitiesOrg::Application.routes.draw do
   root to: 'home#index'
 
   match '/signup',  to: 'users#new'  
-  match '/admin', to: 'sessions#new'
+  match '/admin', to:   'admins#new'
   match '/about',    to: 'home#about'
-  resources :contacts, :users, :blogs, :newsletters , :sessions
+  match '/contact', to: 'contacts#new'
+  match '/logout', to: 'admins#destroy'
+  resources :contacts, :users, :blogs, :newsletters
+  resources :home , :only => [:create] 
+  resources :admins
    
   # The priority is based upon order of creation:
   # first created -> highest priority.

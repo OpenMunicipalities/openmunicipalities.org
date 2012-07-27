@@ -1,0 +1,19 @@
+<div class="adminform">
+<h1>Log in</h1>
+
+<%= form_tag admins_path do%>
+
+<%= label_tag "email" %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<%= text_field_tag('email', nil)%>
+<br/><br/>
+
+
+<%= label_tag "password" %>
+<%= password_field_tag('password',nil)%>
+
+<br/>
+<br/>
+<%= submit_tag "Log in" %>
+<% end %>
+
+</div> 

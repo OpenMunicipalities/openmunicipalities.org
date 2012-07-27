@@ -1,11 +1,18 @@
 <nav id="menu-right">
     <ul class="mainheader">
-    <li><span class="parent"><%= link_to "Home", root_path %></span></li>
-    <li><%= link_to "About", about_path %></li>
-    <li><%= link_to "Blog", blogs_path %></li>
-    <li><%= link_to "News", "#" %></li>
-    <li><%= link_to "Contact", :controller => "contacts", :action => "new" %></li>
-    <li><%= link_to "Sign Up", signup_path %></li>
+    <li><%= link_to "Home", root_path %>&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+    <li><%= link_to "About", about_path %>&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+    <li><%= link_to "Blog", blogs_path %>&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+    <li><%= link_to "News", "#" %>&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+
+    <% if !current_admin %>
+    <li><%= link_to "Contact", contact_path %>&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+    <li><%= link_to "Sign Up", signup_path %>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    <% else %>
+     <li><%= link_to "Log Out (Admin)", logout_path %></li>
+    <% end %>
+
+
     </ul>
 </nav>
 

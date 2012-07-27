@@ -32,10 +32,7 @@ class ContactsController < ApplicationController
     end
   end
 
-  # GET /contacts/1/edit
-  def edit
-    @contact = Contact.find(params[:id])
-  end
+
 
   # POST /contacts
   # POST /contacts.json
@@ -43,7 +40,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     respond_to do |format|
       if verify_recaptcha(:private_key => '6LcW3tMSAAAAAETBFhP6-G3t7ySkxbulNJs8a9uL',:message => "Please fill captcha code correctly.") && @contact.save
-        format.html { redirect_to @contact, notice: 'Thankyou for contacting us. We will soon respond back to you.' }
+        format.html { redirect_to root_path, notice: 'Thankyou for contacting us. We will soon respond back to you.' }
         format.json { render json: @contact, status: :created, location: @contact }
       else
         format.html { render action: "new" }
@@ -52,21 +49,7 @@ class ContactsController < ApplicationController
     end
   end
 
-  # PUT /contacts/1
-  # PUT /contacts/1.json
-  def update
-    @contact = Contact.find(params[:id])
-
-    respond_to do |format|
-      if @contact.update_attributes(params[:contact])
-        format.html { redirect_to @contact, notice: 'Contact was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @contact.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+ 
 
   # DELETE /contacts/1
   # DELETE /contacts/1.json

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Open Municipalities | Home</title>
+  </head>
+  <body>
+<br/><br/><br/>
+<br/><br/><br/>
+
+
+
+<div id="coming"> Coming Soon...<br/>
+<div id="newsletter">Subscribe to our Newsletter:</div>
+
+<!-- Newsletter Signup form Starts  -->
+<%= form_for(@user) do |f| %>
+ <% if @user.errors.any? %>
+<div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this newsletter from being created!!
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+      <%= f.label :email %>
+      <%= f.text_field :email, :size =>46%>
+<br/><br>
+      <%= f.submit "Subscribe"%>
+    <% end %>
+
+
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/>
+<br/><br/><br/>
+
+
+
+
+
+  </body>
+</html>
