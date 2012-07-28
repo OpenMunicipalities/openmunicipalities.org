@@ -90,7 +90,8 @@ padding:0;
 .mainheader li {
 display: inline;
 font-size: 14px;
-padding: 7px;
+padding: 5px;
+word-spacing:2px;
 
 }
 

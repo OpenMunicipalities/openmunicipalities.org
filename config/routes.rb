@@ -9,9 +9,10 @@ OpenmunicipalitiesOrg::Application.routes.draw do
   match '/about',    to: 'home#about'
   match '/contact', to: 'contacts#new'
   match '/logout', to: 'admins#destroy'
-  resources :contacts, :users, :blogs, :newsletters
-  resources :home , :only => [:create] 
-  resources :admins
+  match '/content', to: 'content#index'
+  resources :contacts, :users, :blogs, :home ,:admins
+  resources :newsletters , :only => [:create] 
+  
    
   # The priority is based upon order of creation:
   # first created -> highest priority.
