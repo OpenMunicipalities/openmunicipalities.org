@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Open1';
-       
-   src: url('<%= asset_path('JandaSafeandSoundSolid.ttf') %>');
-
-    font-weight: normal;
-    font-style: normal;
-
-}

@@ -24,6 +24,7 @@ html, body {
 
 
 
+
 /* Main Background */
 
 #main2 {
@@ -91,7 +92,6 @@ padding:0;
 display: inline;
 font-size: 14px;
 padding: 5px;
-word-spacing:2px;
 
 }
 
@@ -100,7 +100,7 @@ text-decoration: none;
 display: block;
 width: 70px;
 display: inline;
-word-spacing:-3px;
+word-spacing:-1px;
 color:#453C3F;
 }
 
